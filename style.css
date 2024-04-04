@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text-1: #000 ;
+    --color-text-2: rgb(46, 46, 207) ;
+}
+
+#firstPage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 4.875rem;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    gap: 3.25rem;
+}
+
+#card > h1 {
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+
+    width: 16rem;
+}
+
+#card > button {
+ all: unset;
+
+ border: 1px solid #000;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 16px;
+ font-weight: 600;
+
+ transition: all .3s;
+}
+
+#card > button:hover {
+ cursor: pointer;
+ color: #fff;
+ background-color: #000;
+}
+
+#card > button:active {
+ cursor: pointer;
+ border: 1px solid var(--color-text-2);
+ color: var(--color-text-2) ;
+}
