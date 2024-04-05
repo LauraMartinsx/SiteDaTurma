@@ -7,6 +7,14 @@
 :root {
     --color-text-1: #000 ;
     --color-text-2: rgb(46, 46, 207) ;
+    --color-blue-100: #0B1780;
+    --color-blue-200: #5A66D4;
+    --color-blue-300: #EBF8FF;
+    --color-yellow-100: #FFCA00;
+}
+
+body {
+    padding-bottom: 10rem ;
 }
 
 header {
@@ -25,16 +33,35 @@ header > img {
 }
 
 header > p {
-    width: 20px;
+    width: 5rem;
     font-weight: bolder;
     font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    text-align: justify;
 }
 
-#firstPage {
-    height: 100vh;
+#heading {
     display: flex;
     align-items: center;
-    padding: 4.875rem;
+    padding: 0 25rem 0 ;
+    background-color: var(--color-blue-300);
+    justify-content: space-between;
+
+
+    height: 40rem;
+}
+
+#main-img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+
+#main-img-div > img {
+    width: 35rem;
+    height: 35rem;
 }
 
 #card {
@@ -46,8 +73,11 @@ header > p {
 #card > h1 {
     font-family: "Nunito Sans", sans-serif;
     text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    width: 20rem;
+    color: var(--color-blue-100);
 
-    width: 16rem;
 }
 
 #card > button {
@@ -73,4 +103,68 @@ header > p {
  cursor: pointer;
  border: 1px solid var(--color-text-2);
  color: var(--color-text-2) ;
+}
+
+#info-section {
+    padding: 1.5rem 25rem 0 ;
+}
+
+#topic-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.list-button {
+    all: unset;
+    background-color: var(--color-blue-100);
+    color: #fff;
+    padding: 1rem 1.5rem;   
+    border-radius: 8px;
+    font-family: "Nunito Sans";
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 1px solid var(--color-blue-100)
+}
+
+.list-button {
+    all: unset;
+    background-color: var(--color-blue-100);
+    color: #fff;
+    padding: 1rem 1.5rem;   
+    border-radius: 8px;
+    font-family: "Nunito Sans";
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 1px solid var(--color-blue-100);
+    transition: filter .3s;
+}
+
+.list-button:hover {
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+.list-button:active {
+    background: var(--color-blue-200);
+    border: 1px solid  var(--color-blue-200);
+}
+
+#board {
+    background-color: var(--color-blue-300);
+    border: 3px dashed var(--color-blue-100);
+    border-radius: 16px;
+    padding: 3rem;
+
+    min-height: 35rem;
+}
+
+.card{
+    background: #fff;
+    border-radius: 16px;
+
+    width: 23rem;
+    height: 30rem;
 }
