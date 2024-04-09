@@ -18,21 +18,25 @@ body {
 }
 
 header {
-    padding: 1rem 2rem;
+    padding: 1rem 25rem;
 
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: .5rem;
-
+    justify-content: space-between;
 }
 
-header > img {
+header > div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header > div > img {
     width: 60px;
     height: 60px;
 }
 
-header > p {
+header > div > p {
     width: 5rem;
     font-weight: bolder;
     font-family: "Bebas Neue", sans-serif;
@@ -115,18 +119,6 @@ header > p {
     width: 100%;
     list-style: none;
     margin-bottom: 1.5rem;
-}
-
-.list-button {
-    all: unset;
-    background-color: var(--color-blue-100);
-    color: #fff;
-    padding: 1rem 1.5rem;   
-    border-radius: 8px;
-    font-family: "Nunito Sans";
-    text-transform: uppercase;
-    font-weight: bolder;
-    border: 1px solid var(--color-blue-100)
 }
 
 .list-button {
