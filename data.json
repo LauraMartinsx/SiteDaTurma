@@ -1,0 +1,14 @@
+{
+    "data": {
+        "courses": [
+            {
+                "course": "ADS",
+                "title": "Análise e Desenvolvimento de Sistemas",
+                "content": "",
+                "slug": "",
+                "imgUrl": "./assets/image-content/sistemas.jpg"
+            }
+        ]
+        
+    }
+}
