@@ -1,0 +1,29 @@
+{
+    "data": {
+        "courses": [
+            {
+                "course": "ADS",
+                "title": "Análise e Desenvolvimento de Sistemas",
+                "content": "somehing-content",
+                "slug": "somehing-slug",
+                "imgUrl": "./assets/image-content/sistemas.jpg"
+            }
+        ],
+
+        "teachers": [
+            {
+                "name": "Joicy",
+                "content": "somehing-content",
+                "slug": "somehing-slug",
+                "imgUrl": "./assets/image-content/sistemas.jpg"
+            },
+            {
+                "name": "Divino",
+                "content": "somehing-content",
+                "slug": "somehing-slug",
+                "imgUrl": "./assets/image-content/sistemas.jpg"
+            }
+        ]
+        
+    }
+}
