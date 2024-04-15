@@ -2,6 +2,7 @@
     "data": {
         "courses": [
             {
+                "id": "ADS",
                 "course": "ADS",
                 "title": "Análise e Desenvolvimento de Sistemas",
                 "content": "somehing-content",
@@ -12,12 +13,14 @@
 
         "teachers": [
             {
+                "id": "joicy",
                 "name": "Joicy",
                 "content": "somehing-content",
                 "slug": "somehing-slug",
                 "imgUrl": "./assets/image-content/sistemas.jpg"
             },
             {
+                "id": "joicy",
                 "name": "Divino",
                 "content": "somehing-content",
                 "slug": "somehing-slug",
