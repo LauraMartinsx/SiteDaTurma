@@ -19,7 +19,7 @@ window.addEventListener('load', fetchInformation)
 modalBtn.addEventListener('click', handleCloseModal)
 
 boardSelectors.courseBtn.addEventListener('click', fetchCourseInfo)
-boardSelectors.courseBtn.addEventListener('click', fetchCourseInfo)
+boardSelectors.teacherBtn.addEventListener('click', fetchTeachersInfo)
 boardSelectors.courseBtn.addEventListener('click', fetchCourseInfo)
 
 
@@ -81,11 +81,12 @@ function fetchCourseInfo() {
     handlePressButton()
 }
 
-function createCard(data) {
-    courseInfo.forEach((data) => {
+function createCard(info) {
+    let stringElement = ``
 
-        
-        board.innerHTML = `
+    info.forEach((data) => {
+
+        stringElement += `
         <div class="card">
         <img src="${data.imgUrl}" alt="">
         
@@ -102,6 +103,10 @@ function createCard(data) {
     
         </div>
         `
+
+        console.log(stringElement)
+        
+        board.innerHTML = stringElement
     })
 }
 
@@ -116,29 +121,9 @@ function fetchCourseInfo() {
 }
 
 function fetchTeachersInfo() {
-    const courseInfo = data.courses
+    const teacherInfo = data.teachers
 
-    courseInfo.forEach((data) => {
-
-        
-        board.innerHTML = `
-        <div class="card">
-        <img src="${data.imgUrl}" alt="">
-        
-        <div class="card-content">
-            <div>
-                <h2>${data.title}</h2>
-                <span>${data.slug}</span>    
-            </div>
-            <button id="${data.id}" class="button-card w-full">
-                Saiba mais
-            </button>        
-        </div>
-        
-    
-        </div>
-        `
-    })
+    createCard(teacherInfo)
 
     buttonCard = document.querySelectorAll('.button-card')
 

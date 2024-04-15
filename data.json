@@ -3,7 +3,6 @@
         "courses": [
             {
                 "id": "ADS",
-                "course": "ADS",
                 "title": "Análise e Desenvolvimento de Sistemas",
                 "content": "somehing-content",
                 "slug": "somehing-slug",
@@ -13,15 +12,15 @@
 
         "teachers": [
             {
-                "id": "joicy",
-                "name": "Joicy",
+                "id": "Divino",
+                "title": "Divino",
                 "content": "somehing-content",
                 "slug": "somehing-slug",
                 "imgUrl": "./assets/image-content/sistemas.jpg"
             },
             {
                 "id": "joicy",
-                "name": "Divino",
+                "title": "Joicy",
                 "content": "somehing-content",
                 "slug": "somehing-slug",
                 "imgUrl": "./assets/image-content/sistemas.jpg"
