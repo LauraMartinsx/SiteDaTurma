@@ -266,13 +266,13 @@ header > div > p {
     height: 40rem;
     border: var(--color-blue-100) 3px solid;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 2rem;
 
 }
 
-#modal-header {
+#dialog-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,7 +280,8 @@ header > div > p {
     border-bottom: var(--color-blue-100) 1px solid;
 }
 
-#modal-header > h2 {
+
+#dialog-header > h2 {
     font-weight: bolder;
     font-family: "Nunito Sans", sans-serif;
     font-weight: bolder;
@@ -288,12 +289,16 @@ header > div > p {
     font-size: xx-large;
 }
 
-#dialog-content {
+#dialog-title{
+    max-width: 20rem;
+}
+
+#dialog-content-container {
     overflow-y: scroll;
     scrollbar-width: none;
 }
 
-#dialog-content > p {
+#dialog-content-container > p {
     font-weight: bolder;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
