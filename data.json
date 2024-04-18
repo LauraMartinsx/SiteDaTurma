@@ -12,18 +12,18 @@
 
             {
                 "category": "teacher",
-                "id": "Divino",
+                "id": "DivinoDoVale",
                 "title": "Divino",
                 "content": "somehing-content",
-                "slug": "somehing-slug",
+                "slug": "Seu metodo de ensino é estimular o lado protagonista dos alunos assim fazendo com que eles tenham uma responsabilidade maior no desenvolvimento do curso",
                 "imgUrl": "./assets/image-content/sistemas.jpg"
             },
             {
                 "category": "teacher",
-                "id": "JOICY",
+                "id": "JoicySad",
                 "title": "Joicy",
-                "content": "Vem elaborando juntamente com os discentes conteúdos e métodos que facilitam o aprendizado , aplicando sempre atividades em grupos que estimulam o trabalho em equipe e principalmente o respeito e a convivência com as diferenças pessoais.",
-                "slug": "somehing-slug",
+                "content": "É legal",
+                "slug": "Vem elaborando juntamente com os discentes conteúdos e métodos que facilitam o aprendizado , aplicando sempre atividades em grupos que estimulam o trabalho em equipe e principalmente o respeito e a convivência com as diferenças pessoais",
                 "imgUrl": "./assets/image-content/sistemas.jpg"
             }
         
