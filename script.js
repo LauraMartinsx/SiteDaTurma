@@ -1,4 +1,5 @@
 let data
+let currentCategory
 
 const boardSelectors = {
     courseBtn: document.getElementById("course"),
@@ -6,28 +7,33 @@ const boardSelectors = {
     studentsBtn: document.getElementById("students"),
 }
 
-const modalBtn = document.getElementById("close-button")
+const dialogBtn = document.getElementById("close-button")
 const dialog = document.getElementById("dialog")
 const board = document.getElementById("board")
+
+const titleDialog = document.getElementById("dialog-title")
+const contentDialog = document.getElementById("dialog-content")
+
 let buttonCard = document.querySelectorAll('.button-card')
 
+window.addEventListener('load', onPageLoad)
 
-
-
-window.addEventListener('load', fetchInformation)
-
-modalBtn.addEventListener('click', handleCloseModal)
+dialogBtn.addEventListener('click', handleCloseDialog)
 
 boardSelectors.courseBtn.addEventListener('click', fetchCourseInfo)
+boardSelectors.teacherBtn.addEventListener('click', fetchTeachersInfo)
 boardSelectors.courseBtn.addEventListener('click', fetchCourseInfo)
-boardSelectors.courseBtn.addEventListener('click', fetchCourseInfo)
+
 
 
 handlePressButton()
 
 
 
-
+async function onPageLoad() {
+    await fetchInformation()
+    fetchCourseInfo()
+}
 
 async function fetchInformation() {
     await fetch('./data.json')
@@ -35,29 +41,20 @@ async function fetchInformation() {
     .then((json) => data = json.data);
 }
 
-
-function handleCloseModal() {
-    dialog.style.display = "none"  
-}
-
-function handleOpenModal(button) {
-    console.log(button.target.id)
-    
-}
-
 function handlePressButton() {
     buttonCard.forEach(button =>{ 
-        button.addEventListener('click', (e) => handleOpenModal(e))
+        button.addEventListener('click', (e) => handleOpenDialog(e))
     }) 
 }
 
-function fetchCourseInfo() {
-    const courseInfo = data.courses
 
-    courseInfo.forEach((data) => {
 
-        
-        board.innerHTML = `
+function createCard(info) {
+    let stringElement = ``
+
+    info.forEach((data) => {
+
+        stringElement += `
         <div class="card">
         <img src="${data.imgUrl}" alt="">
         
@@ -74,39 +71,18 @@ function fetchCourseInfo() {
     
         </div>
         `
+
+
+        board.innerHTML = stringElement
     })
-
-    buttonCard = document.querySelectorAll('.button-card')
-
-    handlePressButton()
 }
 
-function createCard(data) {
-    courseInfo.forEach((data) => {
-
-        
-        board.innerHTML = `
-        <div class="card">
-        <img src="${data.imgUrl}" alt="">
-        
-        <div class="card-content">
-            <div>
-                <h2>${data.title}</h2>
-                <span>${data.slug}</span>    
-            </div>
-            <button id="${data.id}" class="button-card w-full">
-                Saiba mais
-            </button>        
-        </div>
-        
-    
-        </div>
-        `
-    })
+function getListOfElementsByCategory(category) {
+    return data.filter(item => item.category === category)
 }
 
 function fetchCourseInfo() {
-    const courseInfo = data.courses
+    const courseInfo = getListOfElementsByCategory('course')
 
     createCard(courseInfo)
 
@@ -115,32 +91,46 @@ function fetchCourseInfo() {
     handlePressButton()
 }
 
-function fetchTeachersInfo() {
-    const courseInfo = data.courses
+function fetchStudentInfo() {
+    const studentInfo = getListOfElementsByCategory('course')
 
-    courseInfo.forEach((data) => {
 
-        
-        board.innerHTML = `
-        <div class="card">
-        <img src="${data.imgUrl}" alt="">
-        
-        <div class="card-content">
-            <div>
-                <h2>${data.title}</h2>
-                <span>${data.slug}</span>    
-            </div>
-            <button id="${data.id}" class="button-card w-full">
-                Saiba mais
-            </button>        
-        </div>
-        
-    
-        </div>
-        `
-    })
+    createCard(studentInfo)
 
     buttonCard = document.querySelectorAll('.button-card')
 
     handlePressButton()
 }
+
+function fetchTeachersInfo() {
+    const teacherInfo = getListOfElementsByCategory('teacher')
+
+    createCard(teacherInfo)
+
+    buttonCard = document.querySelectorAll('.button-card')
+
+    handlePressButton()
+}
+
+function getCardInfoById(id) {
+    const response = data.find(card => card.id === id)
+
+    return response
+}
+
+function handleOpenDialog(info) {
+    const buttonId = info.target.id 
+    const cardInfo = getCardInfoById(buttonId)
+
+
+    titleDialog.textContent = cardInfo.title
+    
+    contentDialog.textContent = cardInfo.content
+
+    dialog.style.display = "flex"  
+}
+
+function handleCloseDialog() {
+    dialog.style.display = "none"  
+}
+

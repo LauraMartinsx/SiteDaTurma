@@ -1,32 +1,31 @@
 {
-    "data": {
-        "courses": [
-            {
+    "data": [
+
+            {   
+                "category": "course",
                 "id": "ADS",
-                "course": "ADS",
                 "title": "Análise e Desenvolvimento de Sistemas",
                 "content": "somehing-content",
                 "slug": "somehing-slug",
                 "imgUrl": "./assets/image-content/sistemas.jpg"
-            }
-        ],
+            },
 
-        "teachers": [
             {
-                "id": "joicy",
-                "name": "Joicy",
+                "category": "teacher",
+                "id": "Divino",
+                "title": "Divino",
                 "content": "somehing-content",
                 "slug": "somehing-slug",
                 "imgUrl": "./assets/image-content/sistemas.jpg"
             },
             {
-                "id": "joicy",
-                "name": "Divino",
-                "content": "somehing-content",
+                "category": "teacher",
+                "id": "JOICY",
+                "title": "Joicy",
+                "content": "Vem elaborando juntamente com os discentes conteúdos e métodos que facilitam o aprendizado , aplicando sempre atividades em grupos que estimulam o trabalho em equipe e principalmente o respeito e a convivência com as diferenças pessoais.",
                 "slug": "somehing-slug",
                 "imgUrl": "./assets/image-content/sistemas.jpg"
             }
-        ]
         
-    }
+        ]
 }
