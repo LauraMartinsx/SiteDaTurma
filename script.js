@@ -4,12 +4,12 @@ let currentCategory
 const boardSelectors = {
     courseBtn: document.getElementById("course"),
     teacherBtn: document.getElementById("teachers"),
-    studentsBtn: document.getElementById("students"),
 }
 
 const dialogBtn = document.getElementById("close-button")
 const dialog = document.getElementById("dialog")
 const board = document.getElementById("board")
+const knowmore = document.getElementById("knowmore")
 
 const titleDialog = document.getElementById("dialog-title")
 const contentDialog = document.getElementById("dialog-content")
@@ -24,6 +24,9 @@ boardSelectors.courseBtn.addEventListener('click', fetchCourseInfo)
 boardSelectors.teacherBtn.addEventListener('click', fetchTeachersInfo)
 boardSelectors.courseBtn.addEventListener('click', fetchCourseInfo)
 
+knowmore.addEventListener('click', () => {
+    alert("Fiquei com preguiça de fazer. 😃")
+})
 
 
 handlePressButton()
@@ -56,12 +59,12 @@ function createCard(info) {
 
         stringElement += `
         <div class="card">
-        <img src="${data.imgUrl}" alt="">
+        <img src="${data.imgUrl}" alt="" id="content-img">
         
         <div class="card-content">
             <div>
                 <h2>${data.title}</h2>
-                <span>${data.slug}</span>    
+                <span id="card-slug">${data.slug}</span>    
             </div>
             <button id="${data.id}" class="button-card w-full">
                 Saiba mais
@@ -85,17 +88,6 @@ function fetchCourseInfo() {
     const courseInfo = getListOfElementsByCategory('course')
 
     createCard(courseInfo)
-
-    buttonCard = document.querySelectorAll('.button-card')
-
-    handlePressButton()
-}
-
-function fetchStudentInfo() {
-    const studentInfo = getListOfElementsByCategory('course')
-
-
-    createCard(studentInfo)
 
     buttonCard = document.querySelectorAll('.button-card')
 

@@ -1,31 +1,47 @@
 {
     "data": [
-
-            {   
-                "category": "course",
-                "id": "ADS",
-                "title": "Análise e Desenvolvimento de Sistemas",
-                "content": "somehing-content",
-                "slug": "somehing-slug",
-                "imgUrl": "./assets/image-content/sistemas.jpg"
-            },
-
-            {
-                "category": "teacher",
-                "id": "Divino",
-                "title": "Divino",
-                "content": "somehing-content",
-                "slug": "somehing-slug",
-                "imgUrl": "./assets/image-content/sistemas.jpg"
-            },
-            {
-                "category": "teacher",
-                "id": "JOICY",
-                "title": "Joicy",
-                "content": "Vem elaborando juntamente com os discentes conteúdos e métodos que facilitam o aprendizado , aplicando sempre atividades em grupos que estimulam o trabalho em equipe e principalmente o respeito e a convivência com as diferenças pessoais.",
-                "slug": "somehing-slug",
-                "imgUrl": "./assets/image-content/sistemas.jpg"
-            }
         
+        {   
+                "category": "course",
+                "id": "1",
+                "title": "Análise e Desenvolvimento de Sistemas",
+                "slug": "Curso: Análise e Desenvolvimento de Sistemas - Educação Básica",
+                "content": "O curso de Análise e Desenvolvimento de Sistemas oferecido pela educação básica é uma oportunidade valiosa para os alunos mergulharem no mundo da tecnologia desde cedo. Com uma abordagem prática e teórica, os estudantes são capacitados a compreenderem os princípios fundamentais por trás do funcionamento dos sistemas de computação e software. Desde a análise de requisitos até o desenvolvimento de soluções tecnológicas, os alunos são guiados por profissionais experientes, aprendendo a projetar e implementar sistemas eficientes e inovadores.\n\nO currículo abrange uma variedade de tópicos essenciais, incluindo programação, banco de dados, redes de computadores, segurança da informação e desenvolvimento web. Os estudantes são incentivados a trabalhar em projetos práticos que simulam desafios do mundo real, proporcionando-lhes experiência prática e habilidades aplicáveis em diversas áreas.\n\nAlém disso, o curso promove o desenvolvimento de habilidades interpessoais, como trabalho em equipe, comunicação e resolução de problemas, preparando os alunos para enfrentarem os desafios do mercado de trabalho moderno. Com uma demanda crescente por profissionais qualificados em tecnologia da informação, os graduados desse curso têm uma vantagem competitiva significativa ao ingressarem no mercado de trabalho ou prosseguirem seus estudos em níveis mais avançados de educação. Assim, o curso de Análise e Desenvolvimento de Sistemas na educação básica não apenas oferece conhecimentos técnicos, mas também prepara os alunos para se tornarem cidadãos digitais conscientes e bem-sucedidos em um mundo cada vez mais orientado pela tecnologia.",            
+                "imgUrl": "./assets/image-content/sistemas.jpg"
+            },
+
+            {
+                "category": "teacher",
+                "id": "2",
+                "title": "Divino dos magos",
+                "content": "Divino dos Magos é um professor apaixonado pela área de desenvolvimento web, especializado tanto em front-end quanto em back-end. Com vasta experiência no campo da programação, ele ministra disciplinas fundamentais nesses dois domínios. Sua abordagem pedagógica é centrada no aluno, buscando sempre proporcionar uma compreensão abrangente e prática dos conceitos.\n\nAo longo de sua carreira, Divino dos Magos desenvolveu métodos de ensino inovadores, utilizando projetos reais e exemplos práticos para transmitir conhecimento aos seus alunos. Ele valoriza tanto a estética e a usabilidade dos produtos web (front-end) quanto a robustez e eficiência dos sistemas e bancos de dados (back-end).\n\nAlém de suas atividades como professor, Divino dos Magos é um entusiasta da pesquisa e do desenvolvimento na área de tecnologia da informação. Ele incentiva ativamente seus alunos a se envolverem em projetos práticos e a explorarem as últimas tendências e tecnologias emergentes no mundo do desenvolvimento web.",
+                "slug": "Divino dos Magos professor web front-end back-end",
+                "imgUrl": "./assets/image-content/divinodosmagos.jpg"
+            },
+            {
+                "category": "teacher",
+                "id": "3",
+                "title": "Joicy",
+                "content": "Joicy é uma professora apaixonada pelo ensino e pela área de tecnologia da informação. Com vasta experiência no campo, ela leciona disciplinas fundamentais como arquitetura de sistemas e banco de dados. Sua abordagem pedagógica é dinâmica e interativa, buscando sempre envolver os alunos no processo de aprendizagem. Ela acredita que a melhor maneira de compreender os conceitos complexos dessas áreas é por meio de exemplos práticos e projetos hands-on.\n\nAo longo de sua carreira, Joicy desenvolveu métodos inovadores de ensino, utilizando recursos digitais e ferramentas de simulação para tornar as aulas mais atrativas e eficazes. Ela incentiva o pensamento crítico e a resolução de problemas, preparando seus alunos não apenas para enfrentar os desafios acadêmicos, mas também para se destacarem no mercado de trabalho.\n\nAlém de sua atuação como professora, Joicy é uma pesquisadora ativa, sempre em busca de novas tendências e tecnologias emergentes na área de TI. Ela incentiva seus alunos a participarem de projetos de pesquisa e desenvolvimento, proporcionando-lhes oportunidades únicas de aprofundar seus conhecimentos e contribuir para o avanço da ciência e da tecnologia.",
+                "slug": "Joicy professora tecnologia.",
+                "imgUrl": "./assets/image-content/joicy.jpg"
+            },
+            {
+                "category": "course",
+                "id": "4",
+                "title": "Agronomia",
+                "slug": "Curso: Agronomia - Educação Básica",
+                "content": "O curso de Agronomia oferecido pela educação básica é uma oportunidade única para os alunos explorarem o vasto campo das ciências agrárias desde cedo. Com uma abordagem interdisciplinar, os estudantes são introduzidos aos princípios fundamentais da agricultura, agroecologia, manejo de culturas, gestão ambiental e tecnologias agrícolas. Desde a compreensão do solo e das plantas até a aplicação de técnicas de cultivo e manejo, os alunos são guiados por professores especializados, adquirindo conhecimentos teóricos e práticos essenciais para o desenvolvimento sustentável da agricultura.\n\nO currículo abrange uma variedade de disciplinas, incluindo botânica, fisiologia vegetal, entomologia, fitopatologia, manejo de solo e água, além de introdução à agricultura de precisão e biotecnologia agrícola. Os alunos têm a oportunidade de participar de estágios práticos em propriedades rurais e laboratórios especializados, onde podem aplicar seus conhecimentos em contextos reais e desenvolver habilidades práticas.\n\nAlém disso, o curso enfatiza a importância da sustentabilidade e da responsabilidade ambiental na prática agrícola, preparando os alunos para enfrentarem os desafios do setor agrícola moderno. Com uma demanda crescente por profissionais qualificados em agronomia, os graduados desse curso estão bem posicionados para contribuir para o desenvolvimento agrícola e ambiental de suas comunidades. Assim, o curso de Agronomia na educação básica não apenas oferece conhecimentos técnicos, mas também promove valores como ética, compromisso social e cuidado com o meio ambiente.",
+                "imgUrl": "./assets/image-content/agro.jpg"
+            
+            },
+            {
+                "category": "teacher",
+                "id": "5",
+                "title": "Antonio Carlos",
+                "slug": "Professor: Antonio Carlos - Física",
+                "content": "Antonio Carlos é um professor dedicado e experiente no campo da Física, trazendo sua paixão pelo ensino e sua vasta expertise para o curso de Agronomia. Com formação sólida em Física e ampla experiência acadêmica e profissional, ele tem o compromisso de proporcionar uma educação de alta qualidade aos alunos.\n\nComo parte do corpo docente do curso de Agronomia, Antonio Carlos utiliza uma abordagem prática e dinâmica para ensinar conceitos físicos relevantes para a compreensão dos processos agrícolas. Ele integra exemplos do mundo real e aplicações práticas da física na agricultura, ajudando os alunos a relacionarem a teoria com a prática.\n\nAlém disso, Antonio Carlos está comprometido com o sucesso acadêmico e profissional de seus alunos, oferecendo suporte individualizado e orientação personalizada. Sua abordagem empática e acessível cria um ambiente de aprendizado positivo e estimulante, onde os alunos se sentem motivados a explorar e aprofundar seu conhecimento em Física e sua aplicação na Agronomia.\n\nCom sua dedicação e experiência, Antonio Carlos desempenha um papel fundamental no enriquecimento da experiência educacional dos alunos do curso de Agronomia, preparando-os para enfrentarem os desafios do setor agrícola com confiança e competência.",
+                "imgUrl": "./assets/image-content/antonio.jpg"
+            }
         ]
 }
